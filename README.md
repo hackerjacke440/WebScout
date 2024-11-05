@@ -77,19 +77,6 @@ pip install -r requirements.txt
 requests>=2.25.1
 colorama
 ```
-
-## Configuration
-
-Adjust settings in the `config.cfg` file to optimize your scanning process.
-
-## Testing
-
-Run tests using:
-
-```bash
-python -m unittest discover -s tests
-```
-
 ## Contributing
 
 Contributions are encouraged! Please submit a pull request or open an issue for discussion. Ensure compliance with the project's coding standards and guidelines.
