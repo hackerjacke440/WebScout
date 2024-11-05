@@ -17,8 +17,11 @@
 To set up WebScout, follow these steps:
 
 1. Clone the repository:
+```
    ```bash
    git clone https://github.com/hackerjacke440/WebScout.git
+   ```
+   ```
    ```
    cd WebScout
    ```bash
