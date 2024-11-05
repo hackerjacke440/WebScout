@@ -1,20 +1,20 @@
 ```markdown
 # WebScout
 
-![WebScout Logo](path/to/logo.png)  <!-- Optional: Add a logo image here -->
+![WebScout Logo](path/to/logo.png)  <!-- Optional: Add your logo image here -->
 
-WebScout is a simple yet powerful directory scanner written in Python. It leverages multi-threading to quickly discover hidden directories and files on web servers, making it an essential tool for penetration testers and security researchers.
+**WebScout** is a robust directory scanner built in Python that efficiently uncovers hidden directories and files on web servers. With its multi-threaded architecture, it serves as an invaluable asset for penetration testers and security researchers.
 
-## Features
+## Key Features
 
-- **Fast Directory Scanning**: Utilizes multi-threading for speed and efficiency.
-- **Configurable Wordlists**: Easily customize your wordlist for specific scanning needs.
-- **User-Friendly**: Simple command-line interface for easy usage.
-- **Colorful Output**: Enhanced terminal output with colors for better visibility of results.
+- **High-Speed Scanning**: Leverages multi-threading for rapid directory and file discovery.
+- **Customizable Wordlists**: Easily modify or create wordlists tailored to your scanning requirements.
+- **Intuitive Interface**: User-friendly command-line interface simplifies usage.
+- **Enhanced Output**: Colorful terminal output for improved readability of results.
 
 ## Installation
 
-To install WebScout, follow these steps:
+To set up WebScout, follow these steps:
 
 1. Clone the repository:
    ```bash
@@ -22,34 +22,34 @@ To install WebScout, follow these steps:
    cd WebScout
    ```
 
-2. Install the required packages using `pip`:
+2. Install required packages:
    ```bash
    pip install -r requirements.txt
    ```
 
 ## Usage
 
-WebScout is designed to scan directories and files on a specified web server. To use WebScout, run the script with the required arguments:
+WebScout scans directories and files on a specified web server. Execute the script with the necessary arguments:
 
 ```bash
 python webscout.py <target_url> -w <path_to_wordlist> -t <number_of_threads>
 ```
 
-### Parameters:
+### Parameters
 
-- `<target_url>`: The URL of the target website (e.g., `http://example.com/`).
-- `-w <path_to_wordlist>`: The path to the wordlist file used for scanning. By default, it uses the `dictionaries/dicc.txt` file included in the repository.
-- `-t <number_of_threads>`: The number of concurrent threads to use for the scan. Default is `10`.
+- `<target_url>`: Target website URL (e.g., `http://example.com/`).
+- `-w <path_to_wordlist>`: Path to the wordlist file. Default: `dictionaries/dicc.txt`.
+- `-t <number_of_threads>`: Number of concurrent threads for scanning. Default: `10`.
 
-### Example:
+### Example
 
 ```bash
 python webscout.py http://example.com/ -w dictionaries/dicc.txt -t 10
 ```
 
-### Help:
+### Help
 
-To see all available options and usage details, you can run:
+For additional options and usage details, run:
 
 ```bash
 python webscout.py -h
@@ -57,15 +57,15 @@ python webscout.py -h
 
 ## Requirements
 
-WebScout requires Python 3.x and the following Python packages:
+WebScout requires Python 3.x and the following packages:
 
-- `requests`: To handle HTTP requests (version 2.25.1 or higher).
+- `requests`: For handling HTTP requests (version 2.25.1 or higher).
 - `colorama`: For colorful terminal output.
-- `argparse`: For command-line argument parsing (part of the standard library).
+- `argparse`: For command-line argument parsing (included in the standard library).
 
-### Installation of Requirements
+### Install Requirements
 
-To install the required packages, create a virtual environment (optional) and run:
+Create a virtual environment (optional) and install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -80,11 +80,11 @@ colorama
 
 ## Configuration
 
-You can customize your configuration settings in the `config.cfg` file. Adjust settings according to your needs to optimize the scanning process.
+Adjust settings in the `config.cfg` file to optimize your scanning process.
 
 ## Testing
 
-To run the tests, use the following command:
+Run tests using:
 
 ```bash
 python -m unittest discover -s tests
@@ -92,4 +92,4 @@ python -m unittest discover -s tests
 
 ## Contributing
 
-Contributions are welcome! If you would like to contribute, please submit a pull request or open an issue for discussion. Make sure to adhere to the coding standards and guidelines outlined in the project.
+Contributions are encouraged! Please submit a pull request or open an issue for discussion. Ensure compliance with the project's coding standards and guidelines.
