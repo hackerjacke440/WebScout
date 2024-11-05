@@ -24,6 +24,8 @@ To set up WebScout, follow these steps:
    ```
    ```
    cd WebScout
+   ```
+```
    ```bash
 
 2. Install required packages:
