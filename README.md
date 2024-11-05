@@ -1,7 +1,7 @@
 ```markdown
 # WebScout
 
-![WebScout Logo](Webscout/logo.png)  <!-- Optional: Add your logo image here -->
+![WebScout Logo] logo.png 
 
 **WebScout** is a robust directory scanner built in Python that efficiently uncovers hidden directories and files on web servers. With its multi-threaded architecture, it serves as an invaluable asset for penetration testers and security researchers.
 
