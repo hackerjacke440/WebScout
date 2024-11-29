@@ -1,88 +1,116 @@
 ```markdown
-# WebScout
+# 🌐 WebScout
 
 ![WebScout Logo](logo.png)
 
-**WebScout** is a high-performance directory scanner written in Python, designed to efficiently identify hidden directories and files on web servers. Its multi-threaded architecture makes it an essential tool for penetration testers and security researchers.
+**WebScout** is a Python-powered, high-performance directory scanner designed to uncover hidden directories and files on web servers. Its multi-threaded architecture ensures speed and efficiency, making it indispensable for penetration testers and security researchers.
 
-## Features
+---
 
-- **Multi-Threaded Scanning**: Utilize multiple threads for fast and efficient directory/file discovery.
-- **Customizable Wordlists**: Modify or create custom wordlists based on your scanning needs.
-- **User-Friendly CLI**: Intuitive command-line interface for easy setup and use.
-- **Color-Coded Output**: Enhanced terminal output for better readability and result analysis.
+## 🚀 Features
 
-## Installation
+- **Multi-Threaded Scanning**  
+  Perform fast, concurrent directory/file scans using multiple threads.
 
-Follow these steps to install WebScout:
+- **Customizable Wordlists**  
+  Personalize wordlists to match your specific needs for optimal scanning results.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/hackerjacke440/WebScout.git
-   cd WebScout
-   ```
+- **User-Friendly CLI**  
+  An intuitive command-line interface ensures effortless usage.
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+- **Color-Coded Output**  
+  Clearly distinguish results with vibrant, color-coded terminal output.
 
-## Usage
+---
 
-WebScout is simple to use and requires minimal configuration. Run the following command to start scanning a target server:
+## ⚙️ Installation
 
+### 1️⃣ Clone the Repository
+Run the following commands to clone WebScout and navigate to its directory:
+```bash
+git clone https://github.com/hackerjacke440/WebScout.git
+cd WebScout
+```
+
+### 2️⃣ Install Dependencies
+Install the required Python libraries with:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 📖 Usage
+
+Start scanning with WebScout by running the script with the necessary parameters.
+
+### Basic Command:
 ```bash
 python webscout.py <target_url> -w <path_to_wordlist> -t <number_of_threads>
 ```
 
 ### Parameters:
-- `<target_url>`: The URL of the target website (e.g., `http://example.com/`).
-- `-w <path_to_wordlist>`: The path to the wordlist file. Default is `dictionaries/dicc.txt`.
-- `-t <number_of_threads>`: The number of concurrent threads to use for scanning. Default is `10`.
+- **`<target_url>`**: The URL of the target website (e.g., `http://example.com/`).
+- **`-w <path_to_wordlist>`**: Path to the wordlist file (default: `dictionaries/dicc.txt`).
+- **`-t <number_of_threads>`**: Number of concurrent threads (default: `10`).
 
 ### Example:
 ```bash
 python webscout.py http://example.com/ -w dictionaries/dicc.txt -t 10
 ```
 
-### Help:
-To see additional options and usage details, run:
+### Get Help:
+Need more options or details? Run:
 ```bash
 python webscout.py -h
 ```
 
-## Requirements
+---
 
-WebScout requires Python 3.x and the following libraries:
+## 📋 Requirements
 
-- `requests` (v2.25.1 or higher) – For making HTTP requests.
-- `colorama` – For colorful terminal output.
-- `argparse` – For parsing command-line arguments (comes with Python).
+WebScout requires **Python 3.x** and the following libraries:
 
-To install the required packages, run:
+- 🛠️ `requests` (>=2.25.1): For HTTP request handling.
+- 🎨 `colorama`: For colorful output in the terminal.
+- 📜 `argparse`: For parsing command-line arguments (built into Python).
+
+Install these dependencies using:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Contributing
+---
 
-We welcome contributions to WebScout! If you'd like to contribute:
+## 🤝 Contributing
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add feature'`).
-5. Push to your forked repository.
-6. Create a pull request.
+We welcome contributions! Here's how you can contribute:
 
-Please ensure that your code follows the project's coding standards and guidelines.
+1. **Fork the Repository**: Create a copy on GitHub.
+2. **Create a Branch**: Work on your feature or bugfix in a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. **Commit Changes**: Save your progress with meaningful commit messages:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. **Push Changes**: Push your branch to your fork:
+   ```bash
+   git push origin feature-name
+   ```
+5. **Submit a Pull Request**: Open a pull request on the main repository for review.
 
-## License
+---
 
-WebScout is open-source software released under the [MIT License](LICENSE).
+## 📜 License
+
+WebScout is open-source software, released under the [MIT License](LICENSE). Feel free to use, modify, and share it according to the license terms.
 ```
 
-### Changes and Improvements:
-- Enhanced formatting for clarity and better structure.
-- Clearly defined sections such as **Features**, **Requirements**, and **License**.
-- Proper markdown syntax for code blocks and commands.
+### Changes Made:
+1. **Icons and Emojis**: Added icons to make sections visually engaging.
+2. **Short Descriptions**: Simplified section headers for clarity.
+3. **Section Dividers**: Used horizontal rules to separate sections neatly.
+4. **Clean Parameters Formatting**: Highlighted key parameters with bold text for emphasis.
+5. **Engaging Language**: Made descriptions more dynamic and approachable.
